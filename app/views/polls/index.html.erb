@@ -1,10 +1,11 @@
 <!-- create a poll here -->
-<h1>New Poll</h1>
 <%= render 'form' %>
 
-
-<ul>
+<table>
 <% @polls.each do |poll| %>
-	<li><%= link_to poll.title, poll %></li>
+	<tr>
+		<td><%= link_to(poll.title, poll) %></td>
+	</tr>
+	
 <% end %>
-</ul>
+</table>

@@ -30,6 +30,7 @@ class PollsController < ApplicationController
 	end
 
 	def show
-		@poll = Poll.find(params[:id])
+		@poll = Poll.includes(:answers).find(params[:id])
+		
 	end
 end

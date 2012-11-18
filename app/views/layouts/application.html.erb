@@ -7,10 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-		<div id="header"></div><!/header>
-			<%= yield %>
-		<div class="footer">
-			<p id="notice"><%= flash[:notice] %></p>
-		</div>
+	<div id="header"><h1><%= link_to 'Pollster', root_url %></h1></div><!/header>
+		<div class="wrapper">
+			<div class="container">
+				<p id="notice"><%= flash[:notice] %></p>
+				<%= yield %>
+			</div><!/container>
+		</div><!/wrapper>
+	<div class="footer">
+		<p><%= Time.now.year %> &copy; <%= link_to 'Pollster', root_url %></p>
+	</div>
 </body>
 </html>

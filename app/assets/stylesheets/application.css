@@ -11,3 +11,143 @@
  *= require_self
  *= require_tree .
  */
+
+* { margin: 0 0 0 0; }
+html, body { height: 100%; }
+html { 
+	background: #EDEDED url('./red.jpg') no-repeat center center fixed; /*../images/*/
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover; 
+	 color: white;
+	 font-size: 16px;
+	 font-family: georgia;
+}
+
+ul li { list-style-type: none;}
+
+div#header {
+	width: 100% height: 60px; background: #000;
+	border-bottom: 1px solid #666; 
+	-webkit-box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.9);
+	-moz-box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.9);
+	box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.9);
+
+}
+div#header h1 { padding-left: 10%; }
+a { text-decoration: none; color: white;}
+a:active { text-decoration: none; color: white;}
+a:hover { text-decoration: none; color: red;}
+a:visted { text-decoration: none; color: white;}
+
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+	
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+div.wrapper {
+/*	text-align: center;*/
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -130px; /* the bottom margin is the negative value of the footer's height */
+	text-align: center;
+}
+
+div.container {
+	width: 80%; 
+	height: 500px; 
+	margin: auto;
+	padding-top: 8%;
+	background:;
+	text-align: center;
+	/*border: 1px solid black;*/
+}
+
+div.form_for {
+	width: 410px; 
+	overflow: hidden; 
+	margin: auto; 
+	text-align: left;
+	/*background-color: white;*/
+}
+
+table {	margin: auto; text-align: left }
+form { text-align: center; }
+label { margin-right: 8px; display: inline-table;}
+/*p#error { width: 80%; height: 20px; margin: auto; background: pink; border: 1px solid red; }*/
+/*p#flash { width: 80%; height: 20px; margin: auto; background: pink; border: 1px solid red; }*/
+
+input    {
+	width:400px;
+	display:inline-block;
+	border: 1px solid #999;
+	height: 55px;
+	border-radius: 5px 5px 5px 5px
+}
+
+textarea { 
+	width: 400px; 
+	height: 75px;
+	border: 1px solid #999;
+	font-size:16px;
+	padding: 12px 0 0 8px;
+	font-family: georgia;
+	border-radius: 5px 5px 5px 5px
+}
+
+input[type=text] {
+	font-size:16px;
+	padding: 2px 0 0 8px;
+	margin-bottom: 5px;
+	font-family: georgia;
+}
+
+input[type=text]:hover, textarea:hover, input:focus, textarea:focus {
+	background: #eeecec;
+	outline: none;
+}
+
+input[type=submit] {
+	width: 100px;
+	height: 35px;
+	float: left;
+	cursor: pointer;
+	margin-top: 5px;
+	border: 1px solid #666;
+	background: #2d4554;
+	background: -webkit-gradient(linear, left top, left bottom, from(#767b87), to(#2d4554));
+	background: -webkit-linear-gradient(top, #767b87, #2d4554);
+	background: -moz-linear-gradient(top, #767b87, #2d4554);
+	background: -ms-linear-gradient(top, #767b87, #2d4554);
+	background: -o-linear-gradient(top, #767b87, #2d4554);
+	color: white;
+	font-size: 16px;
+	font-family: Georgia;
+}
+	
+input[type=submit]:hover {
+	border-top-color: #384045;
+	background: #384045;
+	color: #ccc;
+}
+
+input[type=submit]:active {
+	border-top-color: #041521;
+	background: #041521;
+}
+
+div.push, div.footer { height: 7px; }
+div.footer { background-color:; text-align: center; padding-top:10px;}
+div.footer ul li { list-style-type: none;}

@@ -1,0 +1,10 @@
+<div class="form_for">
+	<%= form_for [@poll, @answer = Answer.new] do |f| %>
+<div>
+  <%= f.text_area :body, rows: 2 %>
+</div>
+<div>
+  <%= f.submit 'Answer' %>
+</div>
+<% end %>
+</div>

@@ -1,7 +1,8 @@
 
-<h2><%= @poll.title %><h2>
-<h4><%= @poll.question %></h4>
+<h2><%= @poll.title %><h2><br/>
+<h4><%= @poll.question %></h4><br/>
 
-<%= link_to 'Create a Poll', root_url %>
-<%= link_to 'Edit', edit_poll_path(@poll) %>
-<%= link_to 'Back', polls_path %>
+<%= render 'answers/form' %>
+<%= link_to 'Create a Poll', root_url %><br/>
+<%= link_to 'Edit Poll', edit_poll_path(@poll) %><br/>
+<%= link_to 'Back to Polls', polls_path %>

@@ -1,0 +1,4 @@
+<div class="answer">
+  <%= raw answer.body %> 
+    <%= link_to 'Destroy', poll_answer_path(answer.poll, answer), method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
