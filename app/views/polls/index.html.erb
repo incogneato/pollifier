@@ -4,7 +4,7 @@
 <table>
 <% @polls.each do |poll| %>
 	<tr>
-		<td><%= link_to(poll.title, poll) %></td>
+		<td><%= link_to poll.title, poll.encrypted_link %></td>
 	</tr>
 	
 <% end %>

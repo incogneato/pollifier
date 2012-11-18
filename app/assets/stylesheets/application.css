@@ -35,11 +35,13 @@ div#header {
 	box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.9);
 
 }
-div#header h1 { padding-left: 10%; }
+div#header h1 { padding-left: 10%; font-size: 28px; line-height:34px;}
 a { text-decoration: none; color: white;}
 a:active { text-decoration: none; color: white;}
 a:hover { text-decoration: none; color: red;}
 a:visted { text-decoration: none; color: white;}
+
+p#notice { color:yellow; }
 
 img.bg {
 	/* Set rules to fill background */

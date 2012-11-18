@@ -30,7 +30,6 @@ class PollsController < ApplicationController
 	end
 
 	def show
-		@poll = Poll.includes(:answers).find(params[:id])
-		
+		@poll = Poll.includes(:answers).find_by_encrypted_link(params[:encrypted_link])
 	end
 end
