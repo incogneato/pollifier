@@ -1,0 +1,9 @@
+<%= form_for(@poll) do |f| %>
+<p>
+	<%= f.text_field :title, :placeholder => 'What will your poll be called?' %>
+</p>	
+<p>
+	<%= f.text_area :question, :placeholder => 'What do you want to ask?' %>
+</p>
+	<%= f.submit 'Create Poll' %>
+<% end %>
