@@ -1,5 +1,5 @@
 class Poll < ActiveRecord::Base
-  attr_accessible :question, :title, :encrypted_link
+  attr_accessible :question, :encrypted_link, :title
  	has_many :answers
  	validates_presence_of :title, :question
  	before_create :encrypt_link

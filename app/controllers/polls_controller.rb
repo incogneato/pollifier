@@ -11,7 +11,7 @@ class PollsController < ApplicationController
 			redirect_to @poll, notice: 'Poll was successfully created.' 
 		else
 			flash[:error] = "Something went wrong!"
-			redirect_to :root
+			render 'new'
 		end
 	end
 
@@ -30,6 +30,13 @@ class PollsController < ApplicationController
 	end
 
 	def show
-		@poll = Poll.includes(:answers).find_by_encrypted_link(params[:encrypted_link])
+		@poll = Poll.find(params[:id])
+		#@poll = Poll.includes(:answers).find_by_encrypted_link(params[:encrypted_link])
+	end
+
+	def destroy
+		@poll = Poll.find(params[:id])
+		@poll.destroy
+		redirect_to :root, notice: 'Poll was successfully deleted.' 		
 	end
 end
